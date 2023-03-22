@@ -10,7 +10,7 @@
   "author": "Khafizov Radmir",
   "license": "ISC",
   "bin": {
-    "code": "brain-games.js",
+    "brain-even": "bin/brain-even.js",
     "brain-games": "bin/brain-games.js"
   },
   "dependencies": {
