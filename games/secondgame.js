@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 let score = 0;
-let correctAnswer = "";
+let correctAnswer = '';
 console.log('Welcome to the Brain Games!');
 const username = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${username}!`);
@@ -16,16 +16,16 @@ while (score < 3) {
   const question = `${num1} ${operation} ${num2}`;
   console.log('What is the result of the expression?');
   console.log(`Question: ${question}`);
-  if (operation === "+") {
+  if (operation === '+') {
     correctAnswer = num1 + num2;
-  } else if (operation === "-") {
+  } else if (operation === '-') {
     correctAnswer = num1 - num2;
-  } else if (operation === "*") {
+  } else if (operation === '*') {
     correctAnswer = num1 * num2;
   }
   const userAnswer = parseInt(readlineSync.question('Your answer: '), 10);
   if (!checkUserAnswer(userAnswer, correctAnswer)) {
-    console.log(`'${userAnswer}' is wrong answer. Correct answer was "${correctAnswer}". Let's try again, ${username}!`);
+    console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'. Let's try again, ${username}!`);
     break;
   }
   score += 1;
