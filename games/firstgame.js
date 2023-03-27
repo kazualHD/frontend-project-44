@@ -27,7 +27,7 @@ while (true) {
   console.log("Correct!");
   score += 1;
   if (score === 3) {
-    console.log(`Congratulations, ${username}`);
+    console.log(`Congratulations, ${username}!`);
     break;
   }
 }
