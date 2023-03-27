@@ -26,14 +26,14 @@ while (score < 3) {
     correctAnswer = "no";
   }
   if (!CorrectNo(correctAnswer, userAnswer)) {
-    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${correctAnswer}" Let's try again`);
+    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${correctAnswer}" Let's try again, ${username}!`);
     break;
   }
   console.log("Correct!");
   score += 1;
 
   if (score === 3) {
-    console.log(`Congratulations, ${username}`);
+    console.log(`Congratulations, ${username}!`);
     break;
   }
 }
