@@ -21,7 +21,7 @@ while (true) {
     CorrectAnswer = "no";
   }
   if (!CorrectYes(mainnumber, firstanswer)) {
-    console.log(`"${firstanswer}" is wrong answer. Correct answer was "${CorrectAnswer}" Let's try again, ${username}!`);
+    console.log(`"${firstanswer}" is wrong answer. Correct answer was "${CorrectAnswer}". Let's try again, ${username}!`);
     break;
   }
   console.log("Correct!");

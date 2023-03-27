@@ -27,10 +27,10 @@ while (score < 3) {
     stack[index] = "..";
   }
   const str = stack.join(" ");
-  console.log(str);
+  console.log(`Question: ${str}`);
   const userAnswer = parseInt(readlineSync.question("Your answer: "), 10);
   if (userAnswer !== randItem) {
-    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${randItem}". Let's try again, ${username} `);
+    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${randItem}". Let's try again, ${username}! `);
     console.log(`Let's try again, ${username}!`);
     break;
   } else if (userAnswer === randItem) {

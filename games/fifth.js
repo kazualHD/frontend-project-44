@@ -26,7 +26,7 @@ while (score < 3) {
     correctAnswer = "no";
   }
   if (!CorrectNo(correctAnswer, userAnswer)) {
-    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${correctAnswer}" Let's try again, ${username}!`);
+    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${correctAnswer}". Let's try again, ${username}!`);
     break;
   }
   console.log("Correct!");

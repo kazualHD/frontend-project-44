@@ -21,7 +21,7 @@ while (score < 3) {
   correctAnswer = num1 + num2;
   const userAnswer = parseInt(readlineSync.question("Your answer: "), 10);
   if (correctAnswer !== userAnswer) {
-    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${correctAnswer}".`);
+    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${correctAnswer}". Let's try again,${username}!S`);
     console.log(`Let's try again, ${username}!`);
     break;
   }
