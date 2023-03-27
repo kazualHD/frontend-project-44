@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 let score = 0;
 let correctAnswer = "";
@@ -8,7 +8,7 @@ console.log(`Hello, ${username}!`);
 // eslint-disable-next-line no-shadow
 const checkUserAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 while (score < 3) {
-  const symbols = ["+", "-", "*"];
+  const symbols = ['+','-', '*'];
   const randomIndex = Math.floor(Math.random() * symbols.length);
   const operation = symbols[randomIndex];
   const num1 = Math.floor(Math.random() * 100);
@@ -29,7 +29,7 @@ while (score < 3) {
     break;
   }
   score += 1;
-  console.log("Correct!");
+  console.log('Correct!');
 }
 if (score === 3) {
   console.log(`Congratulations, ${username}!`);
