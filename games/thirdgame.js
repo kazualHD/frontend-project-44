@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 let score = 0;
 // eslint-disable-next-line import/no-mutable-exports
