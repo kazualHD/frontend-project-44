@@ -1,7 +1,7 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-console.log("Welcome to the Brain Games!");
-const username = readlineSync.question("May I have your name? ");
+console.log('Welcome to the Brain Games!');
+const username = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${username}!`);
 let score = 0;
 const stack = [];
@@ -22,21 +22,21 @@ while (score < 3) {
   const randItem = stack[Math.floor(Math.random() * stack.length)];
   const index = stack.indexOf(randItem);
 
-  console.log("What number is missing in the progression?");
+  console.log('What number is missing in the progression?');
   if (index !== -1) {
-    stack[index] = "..";
+    stack[index] = '..';
   }
-  const str = stack.join(" ");
+  const str = stack.join(' ');
   console.log(`Question: ${str}`);
-  const userAnswer = parseInt(readlineSync.question("Your answer: "), 10);
+  const userAnswer = parseInt(readlineSync.question('Your answer: '), 10);
   if (userAnswer !== randItem) {
-    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${randItem}". Let's try again, ${username}! `);
+    console.log(`'${userAnswer}' is wrong answer. Correct answer was '${randItem}'. Let's try again, ${username}! `);
     console.log(`Let's try again, ${username}!`);
     break;
   } else if (userAnswer === randItem) {
     stack.length = 0;
     score += 1;
-    console.log("Correct!");
+    console.log('Correct!');
   }
   if (score === 3) {
     console.log(`Congratulations, ${username}!`);

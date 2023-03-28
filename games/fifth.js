@@ -1,9 +1,9 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 let score = 0;
-let correctAnswer = "";
-console.log("Welcome to the Brain Games!");
-const username = readlineSync.question("May I have your name? ");
+let correctAnswer = '';
+console.log('Welcome to the Brain Games!');
+const username = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${username}!`);
 const isNatural = (randValue) => {
   for (let i = 2; i <= randValue / 2; i += 1) {
@@ -14,22 +14,22 @@ const isNatural = (randValue) => {
   return true;
 };
 // eslint-disable-next-line no-mixed-operators, no-shadow
-const CorrectNo = (correctAnswer, userAnswer) => correctAnswer === "yes" && userAnswer === "yes" || correctAnswer === "no" && userAnswer === "no";
-console.log("Answer \"yes\" if given number is prime. Otherwise answer \"no\"");
+const CorrectNo = (correctAnswer, userAnswer) => correctAnswer === 'yes' && userAnswer === 'yes' || correctAnswer === 'no' && userAnswer === 'no';
+console.log('Answer \'yes\' if given number is prime. Otherwise answer \'no\'');
 while (score < 3) {
   const randValue = Math.floor(Math.random() * 200);
   console.log(`Question: ${randValue}`);
-  const userAnswer = readlineSync.question("Your answer: ");
+  const userAnswer = readlineSync.question('Your answer: ');
   if (isNatural(randValue) === true) {
-    correctAnswer = "yes";
+    correctAnswer = 'yes';
   } else if (isNatural(randValue) === false) {
-    correctAnswer = "no";
+    correctAnswer = 'no';
   }
   if (!CorrectNo(correctAnswer, userAnswer)) {
-    console.log(`"${userAnswer}" is wrong answer. Correct answer was "${correctAnswer}". Let's try again, ${username}!`);
+    console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'. Let's try again, ${username}!`);
     break;
   }
-  console.log("Correct!");
+  console.log('Correct!');
   score += 1;
 
   if (score === 3) {
