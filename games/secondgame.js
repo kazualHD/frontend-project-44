@@ -8,7 +8,7 @@ console.log(`Hello, ${username}!`);
 // eslint-disable-next-line no-shadow
 const checkUserAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 while (score < 3) {
-  const symbols = ['+','-', '*'];
+  const symbols = ['+', '-', '*'];
   const randomIndex = Math.floor(Math.random() * symbols.length);
   const operation = symbols[randomIndex];
   const num1 = Math.floor(Math.random() * 100);
