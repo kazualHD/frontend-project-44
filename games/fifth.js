@@ -15,7 +15,7 @@ const isNatural = (randValue) => {
 };
 // eslint-disable-next-line no-mixed-operators, no-shadow
 const CorrectNo = (correctAnswer, userAnswer) => correctAnswer === 'yes' && userAnswer === 'yes' || correctAnswer === 'no' && userAnswer === 'no';
-console.log('Answer \'yes\' if given number is prime. Otherwise answer \'no\'');
+console.log('Answer \"yes\" if given number is prime. Otherwise answer \"no\".');
 while (score < 3) {
   const randValue = Math.floor(Math.random() * 200);
   console.log(`Question: ${randValue}`);
