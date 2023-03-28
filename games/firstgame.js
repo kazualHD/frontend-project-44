@@ -6,7 +6,7 @@ console.log(`Hello, ${username}!`);
 const getRandomInt = (max) => Math.floor(Math.random() * max);
 let score = 0;
 let CorrectAnswer = '';
-console.log('Answer \'yes\' if the number is even, otherwise answer \'no\'.');
+console.log('Answer \"yes\" if the number is even, otherwise answer \"no\".');
 const isEven = (mainnumber) => mainnumber % 2 === 0;
 // eslint-disable-next-line no-mixed-operators
 const CorrectYes = (mainnumber, firstanswer) => isEven(mainnumber) && firstanswer === 'yes' || !isEven(mainnumber) && firstanswer === 'no';
