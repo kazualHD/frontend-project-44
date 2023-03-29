@@ -1,11 +1,8 @@
 import readlineSync from 'readline-sync';
+import username from '../src/index.js';
 
 let score = 0;
 let correctAnswer = '';
-console.log('Welcome to the Brain Games!');
-const username = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${username}!`);
-// eslint-disable-next-line no-shadow
 const checkUserAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 while (score < 3) {
   const symbols = ['+', '-', '*'];
@@ -30,8 +27,10 @@ while (score < 3) {
   }
   score += 1;
   console.log('Correct!');
-}
-if (score === 3) {
+if (score === 3 ) {
   console.log(`Congratulations, ${username}!`);
 }
+}
+ 
+
 export default checkUserAnswer;

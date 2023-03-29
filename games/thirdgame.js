@@ -1,11 +1,8 @@
 import readlineSync from 'readline-sync';
+import username from '../src/index.js';
 
 let score = 0;
-// eslint-disable-next-line import/no-mutable-exports
 let correctAnswer = '';
-console.log('Welcome to the Brain Games!');
-const username = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${username}!`);
 while (score < 3) {
   let num1 = Math.floor(Math.random() * 100);
   let num2 = Math.floor(Math.random() * 100);
@@ -22,13 +19,14 @@ while (score < 3) {
   const userAnswer = parseInt(readlineSync.question('Your answer: '), 10);
   if (correctAnswer !== userAnswer) {
     console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'. Let's try again, ${username}!`);
-    console.log(`Let's try again, ${username}!`);
     break;
   }
   score += 1;
   console.log('Correct!');
-}
-if (score === 3) {
+ if (score === 3) {
   console.log(`Congratulations, ${username}!`);
+ }
 }
+
+
 export default correctAnswer;
