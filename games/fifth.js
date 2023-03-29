@@ -1,7 +1,7 @@
 /* eslint-disable import/no-duplicates */
 import readlineSync from 'readline-sync';
-import username from './.src/index.js';
-import { CheckCorrectAnwer } from './.src/index.js';
+import username from '../src/index.js';
+import { CheckCorrectAnwer } from '../src/index.js';
 
 let score = 0;
 const isNatural = (randValue) => {
