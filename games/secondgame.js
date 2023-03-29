@@ -3,6 +3,7 @@ import username from '../src/index.js';
 
 let correctAnswer = '';
 let score = 0;
+// eslint-disable-next-line no-shadow
 const checkUserAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 while (score < 3) {
   const symbols = ['+', '-', '*'];
