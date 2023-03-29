@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import username from '../src/index.js';
 
+let correctAnswer = '';
 let score = 0;
 const checkUserAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 while (score < 3) {
