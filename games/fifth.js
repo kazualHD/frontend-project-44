@@ -1,9 +1,9 @@
+/* eslint-disable import/no-duplicates */
 import readlineSync from 'readline-sync';
-import username from '../src/index.js';
-import { CheckCorrectAnwer } from '../src/index.js';
+import username from './.src/index.js';
+import { CheckCorrectAnwer } from './.src/index.js';
 
 let score = 0;
-let correctAnswer = '';
 const isNatural = (randValue) => {
   for (let i = 2; i <= randValue / 2; i += 1) {
     if (randValue % i === 0) {
@@ -12,6 +12,7 @@ const isNatural = (randValue) => {
   }
   return true;
 };
+// eslint-disable-next-line no-mixed-operators
 const CorrectNo = (rValue, userAnswer) => rValue === 'yes' && userAnswer === 'yes' || rValue === 'no' && userAnswer === 'no';
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 while (score < 3) {
@@ -25,9 +26,9 @@ while (score < 3) {
   }
   console.log('Correct!');
   score += 1;
-if (score == 3) {
-  console.log(`Congratulations, ${username}!`);
-  break;
-}
+  if (score === 3) {
+    console.log(`Congratulations, ${username}!`);
+    break;
+  }
 }
 export default CorrectNo;

@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 import username from '../src/index.js'
+
 console.log('What number is missing in the progression?');
 let score = 0;
 const stack = [];
@@ -16,7 +17,6 @@ while (score < 3) {
   }
   const randItem = stack[Math.floor(Math.random() * stack.length)];
   const index = stack.indexOf(randItem);
-  
   if (index !== -1) {
     stack[index] = '..';
   }
@@ -31,8 +31,8 @@ while (score < 3) {
     score += 1;
     console.log('Correct!');
   }
- if (score === 3)  {
-  console.log(`Congratulations, ${username}!`);
- }
+  if (score === 3) {
+    console.log(`Congratulations, ${username}!`);
+  }
 }
 export default stack;
