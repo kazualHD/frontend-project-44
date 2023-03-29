@@ -1,12 +1,14 @@
 import readlineSync from 'readline-sync';
-import username from '../src/index.js'
+import username from '../src/index.js';
 
 console.log('What number is missing in the progression?');
 let score = 0;
 const stack = [];
 while (score < 3) {
   const getRandomInt = (min, max) => {
+    // eslint-disable-next-line no-param-reassign
     min = Math.ceil(min);
+    // eslint-disable-next-line no-param-reassign
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
