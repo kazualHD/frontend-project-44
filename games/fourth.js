@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import username from '../src/index.js'
-
+console.log('What number is missing in the progression?');
 let score = 0;
 const stack = [];
 while (score < 3) {
