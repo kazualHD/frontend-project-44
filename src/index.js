@@ -1,26 +1,24 @@
-/* eslint-disable no-param-reassign */
 import readlineSync from 'readline-sync';
 
-console.log('Welcome to the Brain Games!');
-const username = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${username}!`);
-let CorrectAnswer = '';
-export const CheckCorrectAnwer = (func, mainnumber) => {
-  if (func(mainnumber) === true) {
-    CorrectAnswer = 'yes';
-  } else if (func(mainnumber) !== true) {
-    CorrectAnswer = 'no';
-  }
-  return CorrectAnswer;
-};
-export const check = (num1, num2) => {
-  while (num1 !== 0 && num2 !== 0) {
-    if (num1 > num2) {
-      num1 %= num2;
+const RoundsCount = 3;
+const wrapper = (taskDecription, generateRound) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log(taskDecription);
+  for (let i = 0; i < RoundsCount; i += 1) {
+    const [question, answer] = generateRound();
+    console.log('Question:', question);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === answer) {
+      console.log('Correct!');
     } else {
-      num2 %= num1;
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'. \n Let's try again, ${userName}!`);
+      return;
     }
   }
-  return num1 + num2;
+  console.log(`Congratulations, ${userName}!`);
 };
-export default username;
+
+export default wrapper;
+

@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-// eslint-disable-next-line no-unused-vars, import/extensions
-import username from '../src/cli.js';
+import greeting from '../src/cli.js';
+
+greeting();
