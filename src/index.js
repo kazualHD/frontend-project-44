@@ -19,6 +19,4 @@ const wrapper = (taskDecription, generateRound) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-
 export default wrapper;
-
