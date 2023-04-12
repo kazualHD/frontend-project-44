@@ -1,11 +1,56 @@
-Описание проэкта: «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
- Калькулятор. Арифметические выражения, которые необходимо вычислить.
- Прогрессия. Поиск пропущенных чисел в последовательности чисел.
- Определение четного числа.
- Определение наибольшего общего делителя.
- Определение простого числа.
- Демонcтрация первой игры  Определение четного числа: https://asciinema.org/a/47GwKCozDppVxeMVWVcYeFgbW;
- Демонстрация второй игры  Калькулятор: https://asciinema.org/a/C5hUqGSrfSfjjEuEatj47KII5;
- Демонстрация третьей игры  Определение наибольшего общего делителя: https://asciinema.org/a/AMZhrLw5YaZV7Mc9KuYKifCUc;
- Демонстрация четвертой игры Прогрессия: https://asciinema.org/a/75JvDLf5Rs0mG2oRYStZJgw4K;
- Демонстрация пятой игры Определение простого числа: https://asciinema.org/a/ZS266jlcw8c0flAnL8eckpf0u;
+
+<a href=https://codeclimate.com/github/kazualHD/frontend-project-44><img src="https://api.codeclimate.com/v1/badges/54354022d6a8dd8cb3ea/maintainability"/></a>
+
+### Привет! Вот набор нескольких игр для мозга:
+* **brain-even**: Вы увидите случайное число и  должны ответить,  является число четным или нет 
+* **brain calc**: Арифметические выражения, которые необходимо вычислить.
+* **brain-gcd**: Найдите общий делитель. 
+* **brain-progresiion**: Поиск пропущенных чисел в последовательности чисел.
+* **brain-prime**: Определите является число простым или нет
+
+### Требования:
+
+* Nodejs
+* Make
+* Ubuntu, Macos or WSL (for Windows)
+
+### Настройка проэкта :
+
+1. Введите в командной строке: 
+> git@github.com:kazualHD/frontend-project-44.git
+
+2. Введите в командной строке: 
+> cd frontend-project-44
+
+3. Введите в командной строке: 
+> npm ci
+
+4. Введите в командной строке: 
+> npm link
+
+5. Введите имя игры. К примеру: 
+> brain-even
+
+6. Следуйте шагам игры.
+
+* ### Вот примеры игр:
+
+* #### brain-calc:
+
+https://asciinema.org/a/4dZ6BfFn2RDtIwxV5pwogvvwO
+
+* #### brain-even:
+
+https://asciinema.org/a/Jt6KV4Kx1Wk6GKRrVIpayEEQM
+
+* #### brain-gcd:
+
+  https://asciinema.org/a/EnhbkUNWXavfchK7LqlDBtxE3
+
+* #### brain-progression:
+
+https://asciinema.org/a/sBuYXrIU2KbQu5AY9wEaLPYwx
+
+* #### brain-prime:
+
+https://asciinema.org/a/yZzF6zHMVju4QUZJ5Kfa72nab
