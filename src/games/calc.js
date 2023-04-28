@@ -1,7 +1,7 @@
 import wrapper from '../index.js';
 import getRandomInRange from '../utils.js';
 
-const taskDecription = 'What is the result of the expression?';
+const taskDesription = 'What is the result of the expression?';
 
 const getOperator = () => {
   const operations = ['+', '-', '*'];
@@ -29,4 +29,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default () => wrapper(taskDecription, generateRound);
+export default () => wrapper(taskDesription, generateRound);
