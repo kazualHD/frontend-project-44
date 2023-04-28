@@ -3,7 +3,7 @@ import getRandomInRange from '../utils.js';
 
 const taskDescription = 'What number is missing in the progression?';
 
-const getProgression = (num, length, randomStep) => {
+const getProgression = (num, length, Step) => {
   const result = [];
   for (let i = num; result.length <= length; i += randomStep) {
     result.push(String(i));
