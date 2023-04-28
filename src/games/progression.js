@@ -5,7 +5,7 @@ const taskDescription = 'What number is missing in the progression?';
 
 const getProgression = (num, length, Step) => {
   const result = [];
-  for (let i = num; result.length <= length; i += randomStep) {
+  for (let i = num; result.length <= length; i += Step) {
     result.push(String(i));
   }
   return result;
