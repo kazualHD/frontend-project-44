@@ -4,8 +4,8 @@ import getRandomInRange from '../utils.js';
 const taskDesription = 'What is the result of the expression?';
 
 const getOperator = () => {
-  const operations = ['+', '-', '*'];
-  return operations[getRandomInRange(0, operations.length)];
+  const randomoperations = ['+', '-', '*'];
+  return randomoperations[getRandomInRange(0, randomoperations.length)];
 };
 
 const calc = (firstNum, secondNum, Operator) => {
