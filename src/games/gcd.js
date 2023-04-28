@@ -1,7 +1,7 @@
 import wrapper from '../index.js';
 import getRandomInRange from '../utils.js';
 
-const taskDecription = 'Find the greatest common divisor of given numbers.';
+const taskDesription = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (num1, num2) => {
   if (num1 === 0) {
@@ -18,4 +18,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default () => wrapper(taskDecription, generateRound);
+export default () => wrapper(taskDesription, generateRound);
