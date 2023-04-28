@@ -1,4 +1,5 @@
-
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/kazualHD/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/kazualHD/frontend-project-44/actions)
 <a href=https://codeclimate.com/github/kazualHD/frontend-project-44><img src="https://api.codeclimate.com/v1/badges/54354022d6a8dd8cb3ea/maintainability"/></a>
 
 ### Привет! Вот набор нескольких игр для мозга:
