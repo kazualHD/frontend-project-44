@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/kazualHD/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/kazualHD/frontend-project-44/actions)
-<a href=https://codeclimate.com/github/kazualHD/frontend-project-44><img src="https://api.codeclimate.com/v1/badges/54354022d6a8dd8cb3ea/maintainability"/></a>
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/kazualHD/frontend-project-44?style=flat-square)](https://codeclimate.com/github/kazualHD/frontend-project-44)
 
 ### Привет! Вот набор нескольких игр для мозга:
 * **brain-even**: Вы увидите случайное число и  должны ответить,  является число четным или нет 
