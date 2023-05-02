@@ -1,26 +1,20 @@
 import wrapper from '../index.js';
-import getRandomInRange from '../utils.js';
+import { generateQuestionAndAnswer } from '../utils.js';
 
 const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
-  let result;
-  if (num === 2) {
-    return true;
+  if (num < 2) {
+    return false;
   }
-  for (let i = 2; i < num; i += 1) {
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
     if (num % i === 0) {
       return false;
     }
-    result = true;
   }
-  return result;
+  return true;
 };
 
-const generateRound = () => {
-  const num = getRandomInRange(2, 100);
-  const question = String(num);
-  const answer = isPrime(num) ? 'yes' : 'no';
-  return [question, answer];
-};
+const generateRound = () => generateQuestionAndAnswer(2, 100, isPrime);
+
 export default () => wrapper(taskDescription, generateRound);
