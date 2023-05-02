@@ -8,15 +8,15 @@ const getOperator = () => {
   return randomoperations[getRandomInRange(0, randomoperations.length)];
 };
 
-const calc = (firstNum, secondNum, Operator) => {
-  switch (Operator) {
+const calc = (firstNum, secondNum, operator) => {
+  switch (operator) {
     case '+':
       return firstNum + secondNum;
     case '-':
       return firstNum - secondNum;
     case '*':
       return firstNum * secondNum;
-    default: throw new Error(`Operator ${Operator} - is invalid`);
+    default: throw new Error(`Operator ${operator} - is invalid`);
   }
 };
 
